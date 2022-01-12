@@ -1,0 +1,37 @@
+{
+    "devDependencies": {
+        "bluebird": "^3.7.2",
+        "chai": "^4.2.0",
+        "chai-as-promised": "^7.1.1",
+        "child_process": "^1.0.2",
+        "mocha": "^6.0.2",
+        "pkg": "latest",
+        "sinon": "^7.2.4"
+    },
+    "name": "fineart-prints-preview-creator",
+    "description": "A simple program to create a nice wall art preview of a given image. It returns a picture containing your input print on a wall mounted canvas.",
+    "version": "1.0.0",
+    "main": "wallpreview.js",
+    "scripts": {
+        "test": "mocha --timeout 10000",
+        "start": "node wallpreview.js",
+        "build-windows": "npm run test && pkg -t node16-win-x64 --out-path bin/win/x64/ wallpreview.js"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "keywords": [
+        "fineart",
+        "preview",
+        "images",
+        "wall art",
+        "art",
+        "canvas"
+    ],
+    "author": "Elia Lazzari",
+    "license": "MIT",
+    "dependencies": {
+        "canvas": "^2.8.0",
+        "sharp": "^0.29.3"
+    }
+}
