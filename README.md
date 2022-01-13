@@ -1,8 +1,8 @@
 # fineart-prints-preview-creator
  A simple program to create a nice wall art preview of a given image. It returns a picture containing your input print on a wall mounted canvas.
 
- Create Fine Art Preview\n
-## Usage: wallpreview [options] <image>\n
+ Create Fine Art Previewwallpreview
+## Usage: wallpreview [options] <image>wallpreview
 Options:
 -   *--help* Print this help message
 -   *--version* Print the version of this tool
@@ -61,6 +61,13 @@ wallpreview --pattern "./test/darkwood.jfif" --frame-type "nice" --creator-signa
 ```
 The output image is this:
 ![Output image](./previews/test_image.preview.jpg)
+
+## execute with node
+
+```sh 
+npm install
+node wallpreview.js --help
+```
 
 ## compile to executable
 
