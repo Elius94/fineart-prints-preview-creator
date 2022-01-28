@@ -1,5 +1,7 @@
 # fineart-prints-preview-creator
  A simple program to create a nice wall art preview of a given image. It returns a picture containing your input print on a wall mounted canvas.
+ 
+ [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=elius94&repo=fineart-prints-preview-creator&theme=github_dark&show_icons=true)](https://github.com/Elius94/fineart-prints-preview-creator)
 
  Create Fine Art Previewwallpreview
 ## Usage: wallpreview [options] <image>wallpreview
