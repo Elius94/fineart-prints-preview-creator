@@ -22,6 +22,7 @@ Options:
 -   *--signature-align <align>* The alignment of the signature. The alignment is one of the following: 'left', 'center' and 'right'. [default: right]
 -   *--dir <dir>* The directory where the output files will be saved.
 -   *--output-size <size>* The size of the output image. The returned image is a square.
+-   *--output-ratio <ratio>* The ratio of the output image. The ratio is a number. [default: 1] and can be one of the following: '1x1', '4x3', '3x4', '16x9', '9x16', '5x4', '4x5'.
 
 ## Examples:
 wallpreview --verbose image.png

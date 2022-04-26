@@ -19,6 +19,33 @@ const signatureAlignment = process.argv.includes('--signature-align') ? process.
 const outputSize = process.argv.includes('--output-size') ? process.argv[process.argv.indexOf('--output-size') + 1] : 3000;
 const dir = process.argv.includes('--dir') ? process.argv[process.argv.indexOf('--dir') + 1] : null;
 const outputDir = dir ? dir + "/previews/" : process.cwd() + "/previews/";
+const outputRatio = process.argv.includes('--output-ratio') ? process.argv[process.argv.indexOf('--output-ratio') + 1] : 1;
+let ratio
+switch (outputRatio) {
+    case '1x1':
+        ratio = 1;
+        break;
+    case '4x3':
+        ratio = 4 / 3;
+        break;
+    case '4x5':
+        ratio = 4 / 5;
+        break;
+    case '9x16':
+        ratio = 9 / 16;
+        break;
+    case '3x4':
+        ratio = 3 / 4;
+        break;
+    case '5x4':
+        ratio = 5 / 4;
+        break;
+    case '16x9':
+        ratio = 16 / 9;
+        break;
+    default:
+        ratio = 1;
+}
 
 /**
  * @description 
@@ -92,7 +119,7 @@ const createImagePreview = async(path, output) => {
 
     // Create Canvas to validate image
     const { createCanvas, loadImage } = require('canvas')
-    const resultWidth = outputSize;
+    const resultWidth = outputSize * ratio;
     const resultHeight = outputSize;
     const backgroundColor = wallColor;
     const canvas = createCanvas(resultWidth, resultHeight);
@@ -316,6 +343,8 @@ function printHelp() {
         `                                       'left', 'center' and 'right'. [default: right]\n` +
         `  --dir <dir>                          The directory where the output files will be saved.\n` +
         `  --output-size <size>                 The size of the output image. The returned image is a square.\n` +
+        `  --output-ratio <ratio>               The ratio of the output image. The ratio is a number. [default: 1x1] and can be one of the following:\n` +
+        `                                       '1x1', '4x3', '3x4', '16x9', '9x16', '5x4', '4x5'.\n` +
 
         `\n\n` +
         `Examples:\n` +
