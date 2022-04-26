@@ -298,24 +298,24 @@ function printHelp() {
         `A simple program to create a nice wall art preview of a given image. It returns a picture containing your input print on a wall mounted canvas.\n` +
         `Usage: wallpreview [options] <image>\n\n` +
         `Options:\n` +
-        `  --help                       Print this help message\n` +
-        `  --version                    Print the version of this tool\n` +
-        `  --verbose                    Print verbose output\n` +
-        `  --size <size>                The size of the image to be printed on the canvas. The size is a percentage (0-1) of the image size.\n` +
-        `  --paddings <paddings>        The paddings of the frame. The paddings are a percentage (0-1) of the image size.\n` +
-        `  --padding-color <color>      The color of the padding around the image. The color is a hexadecimal value.\n` +
-        `  --frame-color <color>        The color of the frame. The color can be a hexadecimal value or a color name.\n` +
-        `  --frame-type <frame-type>    The type of frame to be used. The frame type can be one of the following:\n` +
-        `                               'no_frame', 'panel', 'canvas', 'solid' and 'nice'.\n` +
-        `  --pattern <pattern>          The pattern to be used to fill the frame. The pattern is a path to an image file.\n` +
-        `  --thickness <thickness>      The thickness of the frame. The thickness is a percentage (0-1) of the image size.\n` +
-        `  --signature <signature>      The signature to be used to fill the frame. The signature is for example the name of the photographer.\n` +
-        `  --signature-size <size>      The size of the signature. The size is a number. [default: 30] \n` +
-        `  --signature-font <font>      The font of the signature. The font is the installed font name. [default: Arial]\n` +
-        `  --signature-align <align>    The alignment of the signature. The alignment is one of the following:\n` +
-        `                               'left', 'center' and 'right'. [default: right]\n` +
-        `  --dir <dir>                  The directory where the output files will be saved.\n` +
-        `  --output-size <size>         The size of the output image. The returned image is a square.\n` +
+        `  --help                               Print this help message\n` +
+        `  --version                            Print the version of this tool\n` +
+        `  --verbose                            Print verbose output\n` +
+        `  --size <size>                        The size of the image to be printed on the canvas. The size is a percentage (0-1) of the image size.\n` +
+        `  --paddings <paddings>                The paddings of the frame. The paddings are a percentage (0-1) of the image size.\n` +
+        `  --padding-color <color>              The color of the padding around the image. The color is a hexadecimal value.\n` +
+        `  --frame-color <color>                The color of the frame. The color can be a hexadecimal value or a color name.\n` +
+        `  --frame-type <frame-type>            The type of frame to be used. The frame type can be one of the following:\n` +
+        `                                       'no_frame', 'panel', 'canvas', 'solid' and 'nice'.\n` +
+        `  --pattern <pattern>                  The pattern to be used to fill the frame. The pattern is a path to an image file.\n` +
+        `  --thickness <thickness>              The thickness of the frame. The thickness is a percentage (0-1) of the image size.\n` +
+        `  --creator-signature <signature>      The signature to be used to fill the frame. The signature is for example the name of the photographer.\n` +
+        `  --signature-size <size>              The size of the signature. The size is a number. [default: 30] \n` +
+        `  --signature-font <font>              The font of the signature. The font is the installed font name. [default: Arial]\n` +
+        `  --signature-align <align>            The alignment of the signature. The alignment is one of the following:\n` +
+        `                                       'left', 'center' and 'right'. [default: right]\n` +
+        `  --dir <dir>                          The directory where the output files will be saved.\n` +
+        `  --output-size <size>                 The size of the output image. The returned image is a square.\n` +
 
         `\n\n` +
         `Examples:\n` +
